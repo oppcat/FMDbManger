@@ -21,6 +21,11 @@
 		6B8EE27418951E9A0029A11E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8EE25618951E9A0029A11E /* UIKit.framework */; };
 		6B8EE27C18951E9A0029A11E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B8EE27A18951E9A0029A11E /* InfoPlist.strings */; };
 		6B8EE27E18951E9A0029A11E /* FMDBManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EE27D18951E9A0029A11E /* FMDBManagerTests.m */; };
+		6B8EE29318951EBA0029A11E /* FMDBPathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EE28918951EBA0029A11E /* FMDBPathUtility.m */; };
+		6B8EE29418951EBA0029A11E /* FMDBPersistentHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EE28B18951EBA0029A11E /* FMDBPersistentHelper.m */; };
+		6B8EE29518951EBA0029A11E /* FMDBPersistentQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EE28D18951EBA0029A11E /* FMDBPersistentQueue.m */; };
+		6B8EE29618951EBA0029A11E /* FMDBUsrModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EE28F18951EBA0029A11E /* FMDBUsrModel.m */; };
+		6B8EE29718951EBA0029A11E /* SandboxFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EE29218951EBA0029A11E /* SandboxFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,16 @@
 		6B8EE27918951E9A0029A11E /* FMDBManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FMDBManagerTests-Info.plist"; sourceTree = "<group>"; };
 		6B8EE27B18951E9A0029A11E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6B8EE27D18951E9A0029A11E /* FMDBManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBManagerTests.m; sourceTree = "<group>"; };
+		6B8EE28818951EBA0029A11E /* FMDBPathUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBPathUtility.h; sourceTree = "<group>"; };
+		6B8EE28918951EBA0029A11E /* FMDBPathUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBPathUtility.m; sourceTree = "<group>"; };
+		6B8EE28A18951EBA0029A11E /* FMDBPersistentHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBPersistentHelper.h; sourceTree = "<group>"; };
+		6B8EE28B18951EBA0029A11E /* FMDBPersistentHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBPersistentHelper.m; sourceTree = "<group>"; };
+		6B8EE28C18951EBA0029A11E /* FMDBPersistentQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBPersistentQueue.h; sourceTree = "<group>"; };
+		6B8EE28D18951EBA0029A11E /* FMDBPersistentQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBPersistentQueue.m; sourceTree = "<group>"; };
+		6B8EE28E18951EBA0029A11E /* FMDBUsrModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBUsrModel.h; sourceTree = "<group>"; };
+		6B8EE28F18951EBA0029A11E /* FMDBUsrModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBUsrModel.m; sourceTree = "<group>"; };
+		6B8EE29118951EBA0029A11E /* SandboxFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandboxFile.h; sourceTree = "<group>"; };
+		6B8EE29218951EBA0029A11E /* SandboxFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandboxFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +127,7 @@
 		6B8EE25818951E9A0029A11E /* FMDBManager */ = {
 			isa = PBXGroup;
 			children = (
+				6B8EE28718951EBA0029A11E /* FMDBManger */,
 				6B8EE26118951E9A0029A11E /* PAAppDelegate.h */,
 				6B8EE26218951E9A0029A11E /* PAAppDelegate.m */,
 				6B8EE26418951E9A0029A11E /* Main.storyboard */,
@@ -150,6 +166,31 @@
 				6B8EE27A18951E9A0029A11E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B8EE28718951EBA0029A11E /* FMDBManger */ = {
+			isa = PBXGroup;
+			children = (
+				6B8EE28818951EBA0029A11E /* FMDBPathUtility.h */,
+				6B8EE28918951EBA0029A11E /* FMDBPathUtility.m */,
+				6B8EE28A18951EBA0029A11E /* FMDBPersistentHelper.h */,
+				6B8EE28B18951EBA0029A11E /* FMDBPersistentHelper.m */,
+				6B8EE28C18951EBA0029A11E /* FMDBPersistentQueue.h */,
+				6B8EE28D18951EBA0029A11E /* FMDBPersistentQueue.m */,
+				6B8EE28E18951EBA0029A11E /* FMDBUsrModel.h */,
+				6B8EE28F18951EBA0029A11E /* FMDBUsrModel.m */,
+				6B8EE29018951EBA0029A11E /* Sandbox */,
+			);
+			path = FMDBManger;
+			sourceTree = "<group>";
+		};
+		6B8EE29018951EBA0029A11E /* Sandbox */ = {
+			isa = PBXGroup;
+			children = (
+				6B8EE29118951EBA0029A11E /* SandboxFile.h */,
+				6B8EE29218951EBA0029A11E /* SandboxFile.m */,
+			);
+			path = Sandbox;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +293,12 @@
 			files = (
 				6B8EE25F18951E9A0029A11E /* main.m in Sources */,
 				6B8EE26918951E9A0029A11E /* PAViewController.m in Sources */,
+				6B8EE29318951EBA0029A11E /* FMDBPathUtility.m in Sources */,
+				6B8EE29418951EBA0029A11E /* FMDBPersistentHelper.m in Sources */,
+				6B8EE29618951EBA0029A11E /* FMDBUsrModel.m in Sources */,
 				6B8EE26318951E9A0029A11E /* PAAppDelegate.m in Sources */,
+				6B8EE29518951EBA0029A11E /* FMDBPersistentQueue.m in Sources */,
+				6B8EE29718951EBA0029A11E /* SandboxFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
